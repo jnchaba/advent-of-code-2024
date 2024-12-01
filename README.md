@@ -5,7 +5,7 @@
 - This year I have chosen Go (GoLang) as the programming language to solve the problems.
 
 ## Directory Map
-- This directory map will be updated on each commit as new files are introduced ()
+- This directory map will be updated on each commit as new files are introduced.
 
 ```
 .
