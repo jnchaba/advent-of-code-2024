@@ -85,11 +85,11 @@ func processMulCalls(mulCalls []string, enableFlags bool) int {
 func partOne(input string) {
 	mulCalls := getMulCalls(input, false)
 	sum := processMulCalls(mulCalls, false)
-	fmt.Println("Sum of mul calls: ", sum)
+	fmt.Println("Part One Answer: ", sum)
 }
 
 func partTwo(input string) {
 	mulCallsWithEnableFlags := getMulCalls(input, true)
 	sum := processMulCalls(mulCallsWithEnableFlags, true)
-	fmt.Println("Sum of mul calls: ", sum)
+	fmt.Println("Part Two Answer: ", sum)
 }
