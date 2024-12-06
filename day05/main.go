@@ -126,5 +126,4 @@ func applyRule(update []int, rule []int) []int {
 		newUpdate = arrayutils.InsertAtIndex(newUpdate, arrayutils.IndexOf(newUpdate, rule[0])+1, illegalVal)
 		return newUpdate
 	}
-
 }
