@@ -69,7 +69,7 @@ func step(input [][]string, row int, col int, direction string, testForInfinite 
 	newRow := row + vector[0]
 	newCol := col + vector[1]
 
-	if stepCount > 10000 {
+	if stepCount > 6000 {
 		infiniteLoopPositions++
 		return input
 	}
@@ -139,7 +139,7 @@ func findUniquePositions(input [][]string) int {
 func tryInfiniteLoopPositions(input [][]string, startRow, startCol int) {
 	for i := 0; i < len(input); i++ {
 		for j := 0; j < len(input[0]); j++ {
-			if input[i][j] != "^" && input[i][j] != "#" {
+			if input[i][j] != "^" && input[i][j] != "#" && input[i][j] != "." {
 				stepCount = 0
 				store := input[i][j]
 				input[i][j] = "#"
